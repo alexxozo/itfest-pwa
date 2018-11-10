@@ -1,6 +1,7 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/textfield/mdc-text-field";
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,6 +51,26 @@ html {
     padding: 100px;
     background: #b618ff;
     border-radius: 4px;
+}
+
+// Top bar
+.search-bar {
+    background: white;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    box-shadow: #560eff 0px 0px 15px;
+    visibility: hidden;
+    // transition: 0.5s all;
+}
+
+.search-input {
+    background: white !important;
+    border-bottom: none !important;
 }
 
 // Changes to Material Design
