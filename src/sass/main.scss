@@ -74,7 +74,7 @@ html {
         transition: .2s ease transform;
         transform: translateY(0%);
     }
-}
+}9
 
 .search-input {
     background: white !important;
@@ -90,6 +90,18 @@ html {
 
 .classes-container {
     grid-template-columns: 1fr 2fr;
+}
+
+.schedule-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.schedule-container img {
+    max-width: 90%;
+    max-height: 80%;
+    align-self: center;
+    justify-self: center;
 }
 
 .news-container {
