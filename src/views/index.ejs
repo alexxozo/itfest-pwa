@@ -45,10 +45,281 @@
         </div>
     </aside>
 
-    <div class="mdc-drawer-app-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe, debitis assumenda neque omnis quo,
-        distinctio, ab similique praesentium obcaecati harum tempora quam expedita quibusdam odit ullam dolorem
-        pariatur. Illum.
+    <div class="mdc-drawer-app-content dashboard">
+        <div class="mdc-tab-bar" role="tablist">
+            <div class="mdc-tab-scroller">
+                <div class="mdc-tab-scroller__scroll-area">
+                    <div class="mdc-tab-scroller__scroll-content">
+                        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">class</span>
+                                <span class="mdc-tab__text-label">Classes</span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">assessment</span>
+                                <span class="mdc-tab__text-label">GradeBook</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">calendar_today</span>
+                                <span class="mdc-tab__text-label">Schedule</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">speaker_notes</span>
+                                <span class="mdc-tab__text-label">News</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">alarm</span>
+                                <span class="mdc-tab__text-label">Deadlines</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab role=" tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">group</span>
+                                <span class="mdc-tab__text-label">Group Projects</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab role=" tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">face</span>
+                                <span class="mdc-tab__text-label">Members</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses -->
+        <div class="mdc-card classes-container tab-container" style="display: none;">
+            <div class="class-list-container">
+                <h1 class="titlu-class">Classes</h1>
+                <ul class="mdc-list mdc-list--two-line classes-list" aria-orientation="vertical">
+                    <li class="mdc-list-item active">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Computer Science</span>
+                            <span class="mdc-list-item__secondary-text">CREDIT POINTS: 5</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Mathematics</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Complexity Analysis</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Computer Science</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Mathematics</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Complexity Analysis</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Computer Science</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Mathematics</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Complexity Analysis</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="courses-list-container">
+                <ul class="mdc-list accordion js-accordion">
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 1
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h4>Date: 04/12/1998</h4>
+                                <h4>Materials:</h4>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 2
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h4>Date: 04/12/1998</h4>
+                                <h4>Materials:</h4>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 1
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"></i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h4>Date: 04/12/1998</h4>
+                                <h4>Materials:</h4>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Members -->
+        <div class="mdc-card tab-container members-container" style="display: none;">
+            <h1 class="titlu-class subliniat">Members</h1>
+            <ul class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list">
+                <li class="mdc-list-item mdc-ripple-upgraded" id="546e0678-de64-456f-b145-48eef06c211e" tabindex="-1"><img
+                        class="mdc-list-item__graphic" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /><span
+                        class="mdc-list-item__text"><span class="mdc-list-item__primary-text">Statescu
+                            Razvan</span><span class="mdc-list-item__secondary-text">22
+                            Dec 2017</span></span><i class="fas fa-user-graduate"></i></li>
+                <li class="mdc-list-item mdc-ripple-upgraded" id="546e0678-de64-456f-b145-48eef06c211e" tabindex="-1"><img
+                        class="mdc-list-item__graphic" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /><span
+                        class="mdc-list-item__text"><span class="mdc-list-item__primary-text">Statescu Cioban</span><span
+                            class="mdc-list-item__secondary-text">22
+                            Dec 2017</span></span><i class="fas fa-user"></i></li>
+
+
+            </ul>
+        </div>
+
+        <!-- GradeBook -->
+        <div class="mdc-card tab-container grades-container" style="display: none;">
+            <h1 class="titlu-class subliniat">GradeBook</h1>
+            <table class='table table-hover'>
+                <thead>
+                    <tr>
+                        <td class='left row-header'>Course</td>
+                        <td class='row-header'>Semester</td>
+                        <td class='row-header'>Exam Grade</td>
+                        <td class='row-header'>Final Grade</td>
+                        <td class='row-header'>Credit Points</td>
+                        <td class='row-header'>Credit Score</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Total GPA: 9.2</h2>
+        </div>
+
+
+    </div>
     </div>
 
     <div class="mdc-dialog"
