@@ -2,6 +2,13 @@
 @import "@material/list/mdc-list";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/textfield/mdc-text-field";
+@import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 html {
@@ -79,6 +87,57 @@ html {
     background: white !important;
     border-bottom: none !important;
 }
+
+// Dashboard
+// .mdc-card {
+//     width:100px;
+//     height: 100px;
+// }
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.classes-container {
+    max-width: 1100px;
+    margin: 10vh auto 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-height: 70%;
+}
+
+.classes-list {
+    overflow-y: scroll;
+}
+
+.classes-list {
+    .mdc-list-item.active {
+        background: #560eff87 !important;
+    }
+}
+
+.class-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    border-right: 1px #4a4a4b55 solid;
+}
+
+.titlu-class {
+    padding: 20px 30px;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 1px #4a4a4b55 solid;
+    margin:0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 
 // Changes to Material Design
 .mdc-list-item__text {}

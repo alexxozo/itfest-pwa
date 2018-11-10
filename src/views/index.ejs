@@ -36,8 +36,8 @@
         <div class="mdc-drawer__content">
             <nav class="mdc-list">
                 <a class="mdc-list-item" href="#" aria-selected="true" id="search-group">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i>
-                    <span class="mdc-list-item__text">Find Groups</span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+                    <span class="mdc-list-item__text">Dashboard</span>
                 </a>
                 <div class="groups">
                     <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
@@ -49,10 +49,147 @@
         </div>
     </aside>
 
-    <div class="mdc-drawer-app-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe, debitis assumenda neque omnis quo,
-        distinctio, ab similique praesentium obcaecati harum tempora quam expedita quibusdam odit ullam dolorem
-        pariatur. Illum.
+    <div class="mdc-drawer-app-content dashboard">
+        <div class="mdc-tab-bar" role="tablist">
+            <div class="mdc-tab-scroller">
+                <div class="mdc-tab-scroller__scroll-area">
+                    <div class="mdc-tab-scroller__scroll-content">
+                        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">class</span>
+                                <span class="mdc-tab__text-label">Classes</span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">assessment</span>
+                                <span class="mdc-tab__text-label">GradeBook</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">calendar_today</span>
+                                <span class="mdc-tab__text-label">Schedule</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">alarm</span>
+                                <span class="mdc-tab__text-label">Deadlines</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab role=" tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">alarm</span>
+                                <span class="mdc-tab__text-label">Group Projects</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab role=" tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">face</span>
+                                <span class="mdc-tab__text-label">Members</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-card classes-container">
+            <div class="class-list-container">
+                <h1 class="titlu-class">Classes</h1>
+                <ul class="mdc-list mdc-list--two-line classes-list" aria-orientation="vertical">
+                    <li class="mdc-list-item active">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Computer Science</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Mathematics</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Complexity Analysis</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Computer Science</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Mathematics</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Complexity Analysis</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Computer Science</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Mathematics</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Complexity Analysis</span>
+                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="courses-list-container">
+                <ul class="mdc-list">
+                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                            aria-hidden="true">wifi</span>Line item</li>
+                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                            aria-hidden="true">wifi</span>Line item</li>
+                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                            aria-hidden="true">wifi</span>Line item</li>
+
+                </ul>
+            </div>
+        </div>
     </div>
 
     <% include partials/footer %>
