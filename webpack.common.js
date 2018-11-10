@@ -10,8 +10,8 @@ const path = require('path');
 
 // installed node modules that must be transpiled through babel
 const includedNodeModules = [
-    'MODULE_THAT_MUST_BE_INCLUDED',
-    'ANOTHER_MODULE_THAT_MUST_BE_INCLUDED'
+    '@material',
+    'ANOTHER_MO1DULE_THAT_MUST_BE_INCLUDED'
 ];
 
 // Environment constants
@@ -126,7 +126,7 @@ module.exports = {
             short_name: "Jokr",
             name: "Jokr",
             icon: {
-                src: path.resolve('src/icons/launcher-icon-512x512.png'),
+                src: path.resolve('src/icons/512x512.png'),
                 sizes: [512, 256, 192, 152, 144, 128]
             },
             start_url: "/index.html",

@@ -1,6 +1,18 @@
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
 }
 
 .flex {
@@ -38,4 +50,9 @@ body {
     padding: 100px;
     background: #b618ff;
     border-radius: 4px;
+}
+
+// Changes to Material Design
+.mdc-list-item__text {
+    
 }
