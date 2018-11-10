@@ -4,6 +4,7 @@ import { MDCTextField } from '@material/textfield';
 import { MDCRipple } from '@material/ripple';
 import { MDCTabBar } from '@material/tab-bar';
 import './searchGroups';
+import { accordion } from './accordion';
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => navigator.serviceWorker.register('/serviceWorker.js'));

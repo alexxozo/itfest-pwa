@@ -118,14 +118,14 @@
                 </div>
             </div>
         </div>
-        <div class="mdc-card classes-container">
+        <div class="mdc-card classes-container mdc-elevation--z7">
             <div class="class-list-container">
                 <h1 class="titlu-class">Classes</h1>
                 <ul class="mdc-list mdc-list--two-line classes-list" aria-orientation="vertical">
                     <li class="mdc-list-item active">
                         <span class="mdc-list-item__text">
                             <span class="mdc-list-item__primary-text">Computer Science</span>
-                            <span class="mdc-list-item__secondary-text">Second-line text</span>
+                            <span class="mdc-list-item__secondary-text">CREDIT POINTS: 5</span>
                         </span>
                     </li>
                     <li class="mdc-list-item">
@@ -179,17 +179,65 @@
                 </ul>
             </div>
             <div class="courses-list-container">
-                <ul class="mdc-list">
-                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
-                            aria-hidden="true">wifi</span>Line item</li>
-                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
-                            aria-hidden="true">wifi</span>Line item</li>
-                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
-                            aria-hidden="true">wifi</span>Line item</li>
-
+                <ul class="mdc-list accordion js-accordion">
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 1
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h4>Date: 04/12/1998</h4>
+                                <h4>Materials:</h4>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 2
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h4>Date: 04/12/1998</h4>
+                                <h4>Materials:</h4>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 1
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"></i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h4>Date: 04/12/1998</h4>
+                                <h4>Materials:</h4>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
+    </div>
     </div>
 
     <% include partials/footer %>

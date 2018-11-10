@@ -10,6 +10,8 @@
 @import "@material/tab-indicator/mdc-tab-indicator";
 @import "@material/tab/mdc-tab";
 
+$main-color : #6200ee;
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
@@ -22,25 +24,6 @@ body {
 html {
     margin: 0;
     padding: 0;
-}
-
-.flex {
-    display: flex;
-}
-
-.button {
-    color: hsl(0, 0%, 100%);
-    padding: 16px 32px;
-    border: 1px solid #560eff;
-    outline: none;
-    border-radius: 4px;
-    background: #b618ff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    &:focus {
-        box-shadow: 0px 0px 8px 2px #560eff;
-    }
 }
 
 .body--test {
@@ -89,11 +72,6 @@ html {
 }
 
 // Dashboard
-// .mdc-card {
-//     width:100px;
-//     height: 100px;
-// }
-
 .dashboard {
     display: grid;
     grid-template-columns: 1fr;
@@ -115,7 +93,8 @@ html {
 
 .classes-list {
     .mdc-list-item.active {
-        background: #560eff87 !important;
+        background: $main-color !important;
+        color:white !important;
     }
 }
 
@@ -137,6 +116,79 @@ html {
 ::-webkit-scrollbar {
     width: 0px;
 }
+
+// Accordion
+.accordion {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    padding:0 !important;
+  }
+  
+  .accordion-header,
+  .accordion-body {
+    background: white;
+  }
+  
+  .accordion-header {
+    padding: 1.5em 1.5em;
+    background: #6300eedf;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    transition: all .3s;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .accordion-header i {
+      color:white !important;
+      margin:0;
+  }
+  
+  .accordion-header:hover {
+    background: $main-color;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .accordion-body {
+    background: #fcfcfc;
+    color: #3f3c3c;
+    display: none;
+  }
+  
+  .accordion-body__contents {
+    padding: 1.5em 1.5em;
+    font-size: .85em;
+  }
+  
+  .accordion__item.active:last-child .accordion-header {
+    border-radius: none;
+  }
+  
+  .accordion:first-child > .accordion__item > .accordion-header {
+    border-bottom: 1px solid transparent;
+  }
+
+  
+  .accordion__item.active > .accordion-header:after {
+    transform: rotate(-180deg);
+  }
+  
+  .accordion__item.active .accordion-header {
+    background: $main-color;
+  }
+  
+  .accordion__item .accordion__item .accordion-header {
+    background: #f1f1f1;
+    color: black;
+  }
+  
 
 
 // Changes to Material Design
