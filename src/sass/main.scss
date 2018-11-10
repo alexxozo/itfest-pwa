@@ -52,7 +52,15 @@ html {
     border-radius: 4px;
 }
 
-// Changes to Material Design
-.mdc-list-item__text {
-    
+.mdc-drawer {
+    $mdc-top-app-bar-row-height: 56px;
+    top: $mdc-top-app-bar-row-height;
+    height: calc(100% - $mdc-top-app-bar-row-height);
+}
+
+@media screen and (min-width: $mdc-top-app-bar-mobile-breakpoint) {
+    .mdc-drawer {
+        top: $mdc-top-app-bar-row-height;
+        height: calc(100% - $mdc-top-app-bar-row-height);
+    }
 }
