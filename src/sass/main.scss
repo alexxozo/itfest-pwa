@@ -2,6 +2,8 @@
 @import "@material/list/mdc-list";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+@import "@material/dialog/mdc-dialog";
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,14 +90,18 @@ html {
 }
 
 .mdc-drawer {
-    $mdc-top-app-bar-row-height: 56px;
-    top: $mdc-top-app-bar-row-height;
-    height: calc(100% - $mdc-top-app-bar-row-height);
+    $mdc-top-app-bar-dense-row-height: 56px;
+    top: $mdc-top-app-bar-dense-row-height;
+    height: calc(100vh - #{$mdc-top-app-bar-dense-row-height});
 }
 
 @media screen and (min-width: $mdc-top-app-bar-mobile-breakpoint) {
     .mdc-drawer {
         top: $mdc-top-app-bar-row-height;
-        height: calc(100% - $mdc-top-app-bar-row-height);
+        height: calc(100vh - #{$mdc-top-app-bar-row-height});
     }
+}
+
+.text-centered {
+    text-align: center;
 }
