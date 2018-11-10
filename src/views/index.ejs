@@ -126,7 +126,7 @@
         </div>
 
         <!-- Courses -->
-        <div class="mdc-card classes-container tab-container" style="display: none;">
+        <div class="mdc-card classes-container tab-container" style="display: grid;">
             <div class="class-list-container">
                 <h1 class="titlu-class">Classes</h1>
                 <ul class="mdc-list mdc-list--two-line classes-list" aria-orientation="vertical">
@@ -193,27 +193,13 @@
                             <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
                         <div class="accordion-body js-accordion-body">
                             <div class="accordion-body__contents">
+                                <div class="leader-only" style="background: rgba(145, 145, 145, 0.1); padding:10px;">
+                                    <h3>Upload a file</h3>
+                                    <input type="file" name="myFile">
+                                </div>
                                 <h3>Info: This course was about the Riemann Sum.</h3>
-                                <h4>Date: 04/12/1998</h4>
-                                <h4>Materials:</h4>
-                                <ul class="mdc-list demo-list">
-                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
-                                            aria-hidden="true">get_app</span>Differential
-                                        equations.pdf</li>
-                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
-                                            aria-hidden="true">get_app</span>Course1.ppt</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="accordion__item js-accordion-item">
-                        <div class="accordion-header js-accordion-header">Course 2
-                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
-                        <div class="accordion-body js-accordion-body">
-                            <div class="accordion-body__contents">
-                                <h3>Info: This course was about the Riemann Sum.</h3>
-                                <h4>Date: 04/12/1998</h4>
-                                <h4>Materials:</h4>
+                                <h3>Date: 04/12/1998</h3>
+                                <h3>Materials:</h3>
                                 <ul class="mdc-list demo-list">
                                     <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
                                             aria-hidden="true">get_app</span>Differential
@@ -226,12 +212,16 @@
                     </li>
                     <li class="accordion__item js-accordion-item">
                         <div class="accordion-header js-accordion-header">Course 1
-                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"></i></div>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
                         <div class="accordion-body js-accordion-body">
                             <div class="accordion-body__contents">
+                                <div class="leader-only" style="background: rgba(145, 145, 145, 0.1); padding:10px;">
+                                    <h3>Upload a file</h3>
+                                    <input type="file" name="myFile">
+                                </div>
                                 <h3>Info: This course was about the Riemann Sum.</h3>
-                                <h4>Date: 04/12/1998</h4>
-                                <h4>Materials:</h4>
+                                <h3>Date: 04/12/1998</h3>
+                                <h3>Materials:</h3>
                                 <ul class="mdc-list demo-list">
                                     <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
                                             aria-hidden="true">get_app</span>Differential
@@ -242,6 +232,29 @@
                             </div>
                         </div>
                     </li>
+                    <li class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">Course 1
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">done</i></div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                                <div class="leader-only" style="background: rgba(145, 145, 145, 0.1); padding:10px;">
+                                    <h3>Upload a file</h3>
+                                    <input type="file" name="myFile">
+                                </div>
+                                <h3>Info: This course was about the Riemann Sum.</h3>
+                                <h3>Date: 04/12/1998</h3>
+                                <h3>Materials:</h3>
+                                <ul class="mdc-list demo-list">
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Differential
+                                        equations.pdf</li>
+                                    <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons"
+                                            aria-hidden="true">get_app</span>Course1.ppt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -318,6 +331,56 @@
             <h2>Total GPA: 9.2</h2>
         </div>
 
+        <!-- News -->
+        <div class="mdc-card tab-container news-container" style="display: none;">
+            <h1 class="titlu-class">News</h1>
+            <div class="news-list">
+                <div class="mdc-card">
+                    <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0">
+                        <div class="demo-card__primary">
+                            <h2 class="demo-card__title mdc-typography--headline6">Deadline is due tomorrow</h2>
+                            <h3 class="demo-card__subtitle mdc-typography--subtitle2">by Mr. Brown</h3>
+                        </div>
+                        <div class="demo-card__secondary mdc-typography--body2">The homework for machine learning is
+                            tomorrow.</div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <div class="mdc-card__action-buttons"><button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">Read</button><button
+                                class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">Bookmark</button></div>
+                        <div class="mdc-card__action-icons"><button class="mdc-icon-button mdc-card__action mdc-card__action--icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                                aria-pressed="false" aria-label="Add to favorites" title="Add to favorites" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"><i
+                                    class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i><i
+                                    class="material-icons mdc-icon-button__icon">favorite_border</i></button><button
+                                class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                                title="Share" data-mdc-ripple-is-unbounded="true" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">share</button><button
+                                class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                                title="More options" data-mdc-ripple-is-unbounded="true" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">more_vert</button></div>
+                    </div>
+                </div>
+                <div class="mdc-card">
+                    <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0">
+                        <div class="demo-card__primary">
+                            <h2 class="demo-card__title mdc-typography--headline6">Deadline is due tomorrow</h2>
+                            <h3 class="demo-card__subtitle mdc-typography--subtitle2">by Mr. Brown</h3>
+                        </div>
+                        <div class="demo-card__secondary mdc-typography--body2">The homework for machine learning is
+                            tomorrow.</div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <div class="mdc-card__action-buttons"><button class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">Read</button><button
+                                class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">Bookmark</button></div>
+                        <div class="mdc-card__action-icons"><button class="mdc-icon-button mdc-card__action mdc-card__action--icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                                aria-pressed="false" aria-label="Add to favorites" title="Add to favorites" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"><i
+                                    class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i><i
+                                    class="material-icons mdc-icon-button__icon">favorite_border</i></button><button
+                                class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                                title="Share" data-mdc-ripple-is-unbounded="true" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">share</button><button
+                                class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                                title="More options" data-mdc-ripple-is-unbounded="true" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">more_vert</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     </div>
