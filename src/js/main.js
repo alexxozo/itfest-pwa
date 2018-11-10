@@ -19,15 +19,14 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.querySelector('#search-button');
 
+
 searchButton.addEventListener('click', function () {
-    searchBar.style = "visibility:visible";
+    searchBar.classList.add('active');
 });
 
 document.querySelector('.mdc-drawer-app-content').addEventListener('click', function () {
-    searchBar.style = "visibility:hidden";
+    searchBar.classList.remove('active');
 });
-
-
 
 // document.querySelector('#search-group').addEventListener('click', function () {
 //     drawer.open = false;
