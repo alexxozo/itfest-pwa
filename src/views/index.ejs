@@ -86,6 +86,16 @@
                         </button>
                         <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                             <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">speaker_notes</span>
+                                <span class="mdc-tab__text-label">News</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
                                 <span class="mdc-tab__icon material-icons" aria-hidden="true">alarm</span>
                                 <span class="mdc-tab__text-label">Deadlines</span>
                             </span>
@@ -96,7 +106,7 @@
                         </button>
                         <button class="mdc-tab role=" tab" aria-selected="true" tabindex="0">
                             <span class="mdc-tab__content">
-                                <span class="mdc-tab__icon material-icons" aria-hidden="true">alarm</span>
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">group</span>
                                 <span class="mdc-tab__text-label">Group Projects</span>
                             </span>
                             <span class="mdc-tab-indicator">
@@ -118,7 +128,9 @@
                 </div>
             </div>
         </div>
-        <div class="mdc-card classes-container mdc-elevation--z7">
+
+        <!-- Courses -->
+        <div class="mdc-card classes-container tab-container" style="display: none;">
             <div class="class-list-container">
                 <h1 class="titlu-class">Classes</h1>
                 <ul class="mdc-list mdc-list--two-line classes-list" aria-orientation="vertical">
@@ -237,6 +249,80 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Members -->
+        <div class="mdc-card tab-container members-container" style="display: none;">
+            <h1 class="titlu-class subliniat">Members</h1>
+            <ul class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list">
+                <li class="mdc-list-item mdc-ripple-upgraded" id="546e0678-de64-456f-b145-48eef06c211e" tabindex="-1"><img
+                        class="mdc-list-item__graphic" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /><span
+                        class="mdc-list-item__text"><span class="mdc-list-item__primary-text">Statescu
+                            Razvan</span><span class="mdc-list-item__secondary-text">22
+                            Dec 2017</span></span><i class="fas fa-user-graduate"></i></li>
+                <li class="mdc-list-item mdc-ripple-upgraded" id="546e0678-de64-456f-b145-48eef06c211e" tabindex="-1"><img
+                        class="mdc-list-item__graphic" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /><span
+                        class="mdc-list-item__text"><span class="mdc-list-item__primary-text">Statescu Cioban</span><span
+                            class="mdc-list-item__secondary-text">22
+                            Dec 2017</span></span><i class="fas fa-user"></i></li>
+
+
+            </ul>
+        </div>
+
+        <!-- GradeBook -->
+        <div class="mdc-card tab-container grades-container" style="display: none;">
+            <h1 class="titlu-class subliniat">GradeBook</h1>
+            <table class='table table-hover'>
+                <thead>
+                    <tr>
+                        <td class='left row-header'>Course</td>
+                        <td class='row-header'>Semester</td>
+                        <td class='row-header'>Exam Grade</td>
+                        <td class='row-header'>Final Grade</td>
+                        <td class='row-header'>Credit Points</td>
+                        <td class='row-header'>Credit Score</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td class='left'>Mathematics</td>
+                        <td>Sem 1</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>36</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Total GPA: 9.2</h2>
+        </div>
+
+
     </div>
     </div>
 
