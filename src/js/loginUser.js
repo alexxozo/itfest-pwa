@@ -9,8 +9,8 @@ const userInfoNode = document.querySelector('#user-info');
 const dialogNode = document.querySelector('.mdc-dialog');
 const dialogConfirmButton = document.querySelector('#confirm-button');
 const mdcDialog = new MDCDialog(dialogNode);
-const dialogTitleNode = dialogNode.querySelector('#my-dialog-title');
-const dialogContentNode = dialogNode.querySelector('#my-dialog-content');
+const dialogTitleNode = dialogNode.querySelector('#mdc-dialog-title');
+const dialogContentNode = dialogNode.querySelector('#mdc-dialog-content');
 
 const groupListItem = name => html`
     <a class="mdc-list-item" href="#">
