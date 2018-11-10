@@ -12,9 +12,23 @@ const mdcDialog = new MDCDialog(dialogNode);
 const dialogTitleNode = dialogNode.querySelector('#mdc-dialog-title');
 const dialogContentNode = dialogNode.querySelector('#mdc-dialog-content');
 
-const groupListItem = name => html`
-    <a class="mdc-list-item" href="#">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">group</i>
+function selectGroup() {
+    if (self.lastSelectGroup) {
+        self.lastSelectGroup.classList.remove('mdc-list-item--selected');
+    }
+    this.classList.add('mdc-list-item--selected');
+    if (this.dataset.id) {
+        self.groupId = this.dataset.id;
+        self.lastSelectGroup = this;
+        displayClases(self.groupId);
+    }
+}
+
+const groupListItem = (name, id) => html`
+    <a class="mdc-list-item" href="#" data-id="${id}" @click="${selectGroup}">
+        <i class=" material-icons
+                                                                                                                                                                                                                                                                                                                                mdc-list-item__graphic"
+            aria-hidden="true">group</i>
         <span class="mdc-list-item__text">${name}</span>
     </a>
 `;
@@ -110,13 +124,16 @@ function displayUserInfo(user) {
     `, userInfoNode);
 }
 
+const classesListNode = document.querySelectorAll('#classes-list');
+
 async function displayUserGroups() {
     const groups = await fetch(`https://testp.statescu.net/it-fest/select_group.php?user_id=${userId}`)
         .then(res => res.json())
         .then(res => res.data || []);
 
     if (groups.length) {
-        render(html`${groups.map(group => groupListItem(group.name))}`, groupListNode);
+        render(html`${groups.map(group => groupListItem(group.name, group.id))}`, groupListNode);
+        groupListNode.querySelector('.mdc-list-item').click();
     } else if (userId !== -1) {
         render(html`<p style="padding: 0 1rem 1rem 1rem">You have not joined any gorups yet</p>`, groupListNode);
     } else {
@@ -156,5 +173,68 @@ export function signUpUser({ firstName, lastName, email, password }) {
 
 }
 
+logInUser({
+    email: 'alex@simion.ro',
+    password: 'testpass'
+});
+
 displayUserInfo();
 displayUserGroups();
+
+const coursesListContainerNode = document.querySelector('#courses-list-container');
+
+async function selectClass() {
+    if (self.lastSelectClass) {
+        self.lastSelectClass.classList.remove('mdc-list-item--selected');
+    }
+    this.classList.add('mdc-list-item--selected');
+    if (this.dataset.id) {
+        self.classId = this.dataset.id;
+        self.lastSelectClass = this;
+        displayClases(self.classId);
+    }
+
+    const details = await fetch('https://testp.statescu.net/it-fest/get_classes.php?class_id=' + self.classId).then(data => data.json()).then(data => data.data);
+
+    const template = details => html`
+    <div class="leader-only" style="background: rgba(145, 145, 145, 0.1); padding:10px;">
+        <h3>Upload a file</h3>
+        <input type="file" name="myFile">
+    </div>
+    <h3>Credits: ${details.credits}</h3>
+    <h3>Teacher: ${details.teacher}</h3>
+    <h3>Room: ${details.room}</h3>
+    <h3>Materials:</h3>
+    <ul class="mdc-list demo-list">
+        <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons" aria-hidden="true">get_app</span>Differential
+            equations.pdf</li>
+        <li class="mdc-list-item mdc-ripple-upgraded"><span class="mdc-list-item__graphic material-icons" aria-hidden="true">get_app</span>Course1.ppt</li>
+    </ul>`;
+    render(template(details[0]), coursesListContainerNode);
+    // coursesListContainerNode.innerHTML = JSON.stringify(details);
+}
+
+const classListContainer = document.querySelector('#class-list-container');
+
+async function displayClases(groupId) {
+    const classes = await fetch('https://testp.statescu.net/it-fest/get_classes.php?group_id=' + groupId).then(data => data.json()).then(data => data.data);
+
+    if (!classes) {
+        return;
+    }
+    console.log(classes);
+    // console.log(classesListNode);
+    render(html`
+    <ul class="mdc-list mdc-list--two-line classes-list" aria-orientation="vertical">
+        <h1 class="titlu-class">Classes</h1>
+        ${classes.map(cls => html`
+        <li class="mdc-list-item" data-id="${cls.id}" @click="${selectClass}">
+            <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">${cls.name}</span>
+                <span class="mdc-list-item__secondary-text">Credits: ${cls.credits}</span>
+            </span>
+        </li>`)}
+    </ul>`, classListContainer);
+
+    document.querySelector('.classes-list > .mdc-list-item').click();
+}
